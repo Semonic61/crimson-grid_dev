@@ -1,26 +1,5 @@
-// RMH_ERP aggregator. One DME include pulls the whole module.
-#include "code\config.dm"
-#include "code\accessories_hook.dm"
-#include "code\species_hook.dm"
-#include "code\reagents.dm"
-#include "code\living.dm"
-#include "code\examine.dm"
-#include "code\sprite_accessories.dm"
-#include "code\organs\_genital.dm"
-#include "code\organs\penis.dm"
-#include "code\organs\testicles.dm"
-#include "code\organs\vagina.dm"
-#include "code\organs\breasts.dm"
-#include "code\organs\anus.dm"
-#include "code\preferences\erp_toggles.dm"
-#include "code\preferences\genitals.dm"
-#include "code\subsystem\interactions.dm"
-#include "code\interaction\interaction_datum.dm"
-#include "code\interaction\climax.dm"
-#include "code\interaction\interaction_component.dm"
-#include "code\interaction\verb.dm"
-#include "code\interaction\interactions\_social.dm"
-#include "code\interaction\interactions\hands.dm"
-#include "code\interaction\interactions\oral.dm"
-#include "code\interaction\interactions\sex.dm"
-#include "code\interaction\interactions\self.dm"
+// RMH_ERP
+// Banner only. Do NOT #include other module files from here.
+// This fork's ticked_file_enforcement scans every .dm against tgstation.dme,
+// so each file under modular_rmh/code/ must be listed in the DME itself.
+// Including them both here and in the DME would compile them twice.
