@@ -1,0 +1,31 @@
+// Paste into tgstation.dme
+//
+// 1) After the last ~darkpack define include (before ~~crimson_defines):
+#include "code\__DEFINES\~rmh\erp.dm"
+
+// 2) Immediately before // END_INCLUDE (ticked_file_enforcement requires every .dm listed):
+#include "modular_rmh\code\accessories_hook.dm"
+#include "modular_rmh\code\config.dm"
+#include "modular_rmh\code\examine.dm"
+#include "modular_rmh\code\living.dm"
+#include "modular_rmh\code\reagents.dm"
+#include "modular_rmh\code\species_hook.dm"
+#include "modular_rmh\code\sprite_accessories.dm"
+#include "modular_rmh\code\interaction\climax.dm"
+#include "modular_rmh\code\interaction\interaction_component.dm"
+#include "modular_rmh\code\interaction\interaction_datum.dm"
+#include "modular_rmh\code\interaction\verb.dm"
+#include "modular_rmh\code\interaction\interactions\_social.dm"
+#include "modular_rmh\code\interaction\interactions\hands.dm"
+#include "modular_rmh\code\interaction\interactions\oral.dm"
+#include "modular_rmh\code\interaction\interactions\self.dm"
+#include "modular_rmh\code\interaction\interactions\sex.dm"
+#include "modular_rmh\code\organs\_genital.dm"
+#include "modular_rmh\code\organs\anus.dm"
+#include "modular_rmh\code\organs\breasts.dm"
+#include "modular_rmh\code\organs\penis.dm"
+#include "modular_rmh\code\organs\testicles.dm"
+#include "modular_rmh\code\organs\vagina.dm"
+#include "modular_rmh\code\preferences\erp_toggles.dm"
+#include "modular_rmh\code\preferences\genitals.dm"
+#include "modular_rmh\code\subsystem\interactions.dm"
