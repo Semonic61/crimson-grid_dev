@@ -20,7 +20,6 @@
 	UnregisterSignal(parent, COMSIG_CLICK_CTRL_SHIFT)
 
 /datum/component/interactable/Destroy(force)
-	STOP_PROCESSING(SSinteractions, src)
 	self = null
 	interacting_with = null
 	return ..()

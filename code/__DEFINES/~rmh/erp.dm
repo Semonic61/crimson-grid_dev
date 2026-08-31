@@ -65,3 +65,7 @@
 	/obj/item/organ/genital/breasts, \
 	/obj/item/organ/genital/anus \
 )
+
+/// RMH_ERP span helpers — not defined anywhere upstream, needed by climax.dm / interaction_datum.dm
+#define span_love(str) ("<span class='love'>" + str + "</span>")
+#define span_pink(str) ("<span class='pink'>" + str + "</span>")
