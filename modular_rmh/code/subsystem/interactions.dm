@@ -16,6 +16,13 @@ SUBSYSTEM_DEF(interactions)
 			interaction.id = "[path]"
 		interactions[interaction.id] = interaction
 
+/datum/controller/subsystem/interactions/proc/get_available(mob/living/user, mob/living/target)
+	. = list()
+	for(var/id in interactions)
+		var/datum/interaction/interaction = interactions[id]
+		if(interaction.allow_act(user, target))
+			. += interaction
+
 /datum/controller/subsystem/interactions/fire(resumed)
 	for(var/mob/living/living_mob as anything in GLOB.alive_mob_list)
 		if(!living_mob.erp_arousal && !living_mob.erp_pleasure)
